@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <main>
+    <h2 class="heading">SPLI <br> TTER</h2>
+    <div class="container">
+    
+      <p class="bill">Bill</p>
+      <input type="text" maxlength="4" name="amount" placeholder="0" id="amount">
+      <img src="icon-dollar.svg"  alt="dollor" class="dollor">
+      <p class="sel">Select Tip %</p>
+      <button class="btn1 btn10" id="five">5%</button>
+      <button class="btn2 btn10" id="ten">10%</button>
+      <button class="btn3 btn10" id="fift">15%</button>
+     
+      <button class="btn4 btn10" id="twen">25%</button>
+
+      <button class="btn5 btn10" id="fifty">50%</button>
+      <button class="btn6" id="custom1">Custom</button>
+      <input type="text"  id="custom" maxlength="4">
+      <p class="num">Number of People</p>
+       <img src="icon-person.svg" alt="person" class="person">
+      <input type="text" maxlength="1" name="people" placeholder="0" id="people">
+
+      <div class="total">
+      <p class="total1">Tip Amount <br> <span>/ person</span></p>
+      <p class="total2">Total <br> <span>/ person</span></p>
+       <button class="btn" onclick="reset()">RESET</button>
+       <h1 class="price1" id="price1">$0.00</h1>
+       <h1 class="price2" id="price2">$0.00</h1>
+      </div>
+    </div>
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>
